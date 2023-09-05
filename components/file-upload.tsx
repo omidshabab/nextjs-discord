@@ -48,10 +48,17 @@ export const FileUpload = ({
                          href={value}
                          target="_blank"
                          rel="noopener noreferrer"
-                         className="ml-2"
+                         className="ml-2 text-sm text-indigo-500 dark:text-indigo-400 hover:underline"
                     >
-
+                         {value}
                     </a>
+                    <button
+                         onClick={() => { onChange("") }}
+                         className="bg-rose-500 text-white p-1 rounded-full absolute -top-0 -right-0 shadow-sm"
+                         type="button"
+                    >
+                         <X className="h-4 w-4" />
+                    </button>
                </div>
           )
      }
